@@ -1,5 +1,5 @@
-cook_book = {}
-with open('recipes.txt') as f:
+with open('recipes.txt', encoding='utf-8') as f:
+    cook_book = {}
     for i in f:
         recepie_name = i.strip()
         ingredients_count = f.readline()
